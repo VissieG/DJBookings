@@ -62,6 +62,17 @@
   .sec-head h2{font-family:'Bebas Neue';font-size:clamp(42px,8vw,90px);letter-spacing:2px;line-height:.9;margin-top:14px}
   .sec-head p{color:var(--muted);margin-top:16px;font-weight:300;line-height:1.7;max-width:560px}
 
+  /* PRICING */
+  .price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+  .price-card{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:34px 28px;text-align:center;transition:.3s;position:relative}
+  .price-card:hover{transform:translateY(-8px);border-color:var(--neon);box-shadow:0 20px 44px rgba(0,0,0,.5),0 0 30px rgba(77,255,46,.15)}
+  .price-card .pc-type{font-family:'Space Mono';font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--muted)}
+  .price-card .pc-amount{font-family:'Bebas Neue';font-size:clamp(46px,8vw,64px);letter-spacing:2px;color:var(--neon);line-height:1;margin:14px 0 4px}
+  .price-note{margin-top:34px;text-align:center;font-weight:300;color:var(--muted);line-height:1.7;font-size:15px}
+  .price-note b{color:var(--neon-soft);font-weight:600}
+  .price-addon{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-family:'Space Mono';font-size:13px;font-weight:700;letter-spacing:1px;color:var(--neon-soft);border:1px solid var(--line);border-radius:30px;padding:11px 20px}
+  .price-addon b{color:var(--neon)}
+
   /* GENRE CARDS - friendlier, artists shown */
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
   .gcard{border-radius:20px;overflow:hidden;background:var(--panel);border:1px solid var(--line);transition:.3s;position:relative;display:flex;flex-direction:column}
@@ -139,6 +150,31 @@
   <p class="slogan">Music. Energy. Memories.</p>
   <div class="eq"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
+
+<section class="block" id="pricing">
+  <div class="sec-head">
+    <div class="lbl">// The Rates</div>
+    <h2>Pricing</h2>
+    <p>Straightforward rates for every kind of event &mdash; laser show and full DJ equipment included in every performance.</p>
+  </div>
+  <div class="price-grid">
+    <div class="price-card">
+      <div class="pc-amount">R2500</div>
+      <div class="pc-type">DJ Gigs</div>
+    </div>
+    <div class="price-card">
+      <div class="pc-amount">R3000</div>
+      <div class="pc-type">Private Events</div>
+    </div>
+    <div class="price-card">
+      <div class="pc-amount">R5000</div>
+      <div class="pc-type">Weddings</div>
+    </div>
+  </div>
+  <p class="price-note">The <b>laser show and all DJ equipment are included</b> in every performance.<br>
+    <span class="price-addon">Additional Sound Hire &mdash; <b>R2000</b></span>
+  </p>
+</section>
 
 <section class="block" id="sounds">
   <div class="sec-head">
@@ -222,7 +258,7 @@
 <rect x="244" y="150" width="36" height="30" rx="4"/>
 <g opacity=".85"><path d="M286 165c20-4 18-26 36-22s14 24 34 18"/><path d="M286 150c26-8 24-34 48-28"/><path d="M292 178c18 0 22-16 40-14"/></g>
 </g></svg></div>
-      <div class="rig-info"><h4>Beamz Rage 1500</h4><div class="t">Smoke Machine</div></div>
+      <div class="rig-info"><h4>DJ Power PT-1500A</h4><div class="t">Fog Machine</div></div>
     </div>
     <div class="rig-card">
       <div class="rig-art"><svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid meet">
