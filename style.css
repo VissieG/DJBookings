@@ -231,3 +231,19 @@
   .faq details p{padding:0 22px 20px;color:var(--muted);font-weight:300;line-height:1.7}
   .pc-list li b{color:var(--neon);font-weight:600}
   footer .area{margin-top:26px;font-family:'Space Mono';font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--neon-soft)}
+
+  /* ===== Weddings ===== */
+  .w-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:960px){.w-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.w-grid{grid-template-columns:1fr}}
+  .w-card{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:26px 24px;transition:.3s}
+  .w-card:hover{border-color:var(--neon);transform:translateY(-4px);box-shadow:0 0 26px rgba(77,255,46,.14)}
+  .w-ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(77,255,46,.1);margin-bottom:16px}
+  .w-ico svg{width:24px;height:24px;fill:none;stroke:var(--neon);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .w-card h4{font-family:'Bebas Neue';font-size:26px;letter-spacing:1px}
+  .w-card p{color:var(--muted);font-weight:300;font-size:14px;line-height:1.6;margin-top:6px}
+  .w-cta{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;border:1px solid var(--neon);border-radius:20px;padding:22px 26px;background:rgba(77,255,46,.05)}
+  .w-cta b{display:block;font-family:'Bebas Neue';font-size:30px;letter-spacing:1px;color:var(--neon)}
+  .w-cta span{font-size:13px;color:var(--muted)}
+  .cta-band .af{margin-top:14px;font-family:'Space Mono';font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--neon-soft)}
+  @media(max-width:860px){.nav{gap:16px}.nav-link{font-size:12px}}
