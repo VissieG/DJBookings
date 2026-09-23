@@ -115,12 +115,6 @@
 
   @media(max-width:600px){header{padding:14px 6vw}.wa-btn span{display:none}}
 
-  /* ===== HERO VIDEO BACKGROUND (added) ===== */
-  .hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden;background:#000}
-  .hero-bg video{width:100%;height:100%;object-fit:cover;display:block}
-  .hero-bg::after{content:"";position:absolute;inset:0;pointer-events:none;
-    background:linear-gradient(rgba(5,8,6,.42) 0%,rgba(5,8,6,.30) 40%,rgba(5,8,6,.80) 82%,var(--bg) 100%),
-      radial-gradient(circle at 50% 34%,rgba(77,255,46,.13),transparent 60%)}
   .hero>.kicker,.hero>h1,.hero>.slogan,.hero>.eq{z-index:2}
 
   /* ===== MOMENTS GALLERY (added) ===== */

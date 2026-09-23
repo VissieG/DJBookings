@@ -42,8 +42,3 @@ document.querySelectorAll('video.gv').forEach(v=>v.addEventListener('play',()=>{
   if(h&&document.getElementById(h))pick(h);
 })();
 
-/* Respect reduced-motion: hold the hero on its poster frame */
-if(matchMedia('(prefers-reduced-motion: reduce)').matches){
-  const hv=document.querySelector('.hero-bg video');
-  if(hv){hv.removeAttribute('autoplay');hv.pause();}
-}
