@@ -247,3 +247,9 @@
   .w-cta span{font-size:13px;color:var(--muted)}
   .cta-band .af{margin-top:14px;font-family:'Space Mono';font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--neon-soft)}
   @media(max-width:860px){.nav{gap:16px}.nav-link{font-size:12px}}
+
+  /* ===== About stats ===== */
+  .sec-head p+p{margin-top:12px}
+  .about-stats{display:flex;gap:26px;margin-top:22px;flex-wrap:wrap}
+  .about-stats b{display:block;font-family:'Bebas Neue';font-size:42px;line-height:1;color:var(--neon)}
+  .about-stats span{font-family:'Space Mono';font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
