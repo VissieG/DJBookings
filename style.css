@@ -218,3 +218,16 @@
     .tabs::-webkit-scrollbar{display:none}
     .kicker{letter-spacing:3px;font-size:11px}
   }
+
+  /* ===== FAQ + service area ===== */
+  .faq{display:grid;gap:12px;max-width:860px}
+  .faq details{border:1px solid var(--line);border-radius:16px;background:var(--panel);transition:border-color .2s}
+  .faq details[open]{border-color:var(--neon)}
+  .faq summary{cursor:pointer;list-style:none;padding:18px 54px 18px 22px;font-weight:600;position:relative;line-height:1.4}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-family:'Space Mono';font-size:22px;color:var(--neon);transition:transform .2s}
+  .faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+  .faq summary:focus-visible{outline:2px solid var(--neon);outline-offset:2px;border-radius:16px}
+  .faq details p{padding:0 22px 20px;color:var(--muted);font-weight:300;line-height:1.7}
+  .pc-list li b{color:var(--neon);font-weight:600}
+  footer .area{margin-top:26px;font-family:'Space Mono';font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--neon-soft)}
