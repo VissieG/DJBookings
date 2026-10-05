@@ -42,3 +42,20 @@ document.querySelectorAll('video.gv').forEach(v=>v.addEventListener('play',()=>{
   if(h&&document.getElementById(h))pick(h);
 })();
 
+/* Upcoming gigs: hide dates that have passed, flag the next one */
+(function(){
+  const rows=[...document.querySelectorAll('.fx[data-date]')];
+  if(!rows.length)return;
+  const today=new Date();today.setHours(0,0,0,0);
+  const day=r=>new Date(r.dataset.date+'T00:00');
+  const up=rows.filter(r=>!(r.hidden=day(r)<today));
+  rows.forEach(r=>r.classList.toggle('next',r===up[0]));
+  if(!up.length){document.querySelectorAll('#gigs,.next-gig,a[href="#gigs"]').forEach(e=>e.hidden=true);return;}
+  const tonight=+day(up[0])===+today;
+  if(tonight)up[0].querySelector('.fx-badge').textContent='Tonight';
+  const pill=document.querySelector('.next-gig');
+  if(!pill)return;
+  pill.querySelector('em').textContent=tonight?'Tonight':'Next gig';
+  pill.querySelector('b').textContent=tonight?'':up[0].dataset.label;
+  pill.querySelector('span').textContent=up[0].querySelector('h4').textContent;
+})();
