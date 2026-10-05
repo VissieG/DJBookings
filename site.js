@@ -42,11 +42,12 @@ document.querySelectorAll('video.gv').forEach(v=>v.addEventListener('play',()=>{
   if(h&&document.getElementById(h))pick(h);
 })();
 
-/* Upcoming gigs: hide dates that have passed, flag the next one */
+/* Upcoming gigs: hide dates that have passed, flag the next one.
+   Sets run until 02:00, so a gig still counts as "today" until then. */
 (function(){
   const rows=[...document.querySelectorAll('.fx[data-date]')];
   if(!rows.length)return;
-  const today=new Date();today.setHours(0,0,0,0);
+  const today=new Date();today.setHours(today.getHours()-2);today.setHours(0,0,0,0);
   const day=r=>new Date(r.dataset.date+'T00:00');
   const up=rows.filter(r=>!(r.hidden=day(r)<today));
   rows.forEach(r=>r.classList.toggle('next',r===up[0]));

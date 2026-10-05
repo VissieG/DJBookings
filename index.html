@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261005b">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","name":"Vissie G — DJ","url":"https://djvissieg.visserai.co.za/","image":"https://djvissieg.visserai.co.za/media/og.jpg","logo":"https://djvissieg.visserai.co.za/media/logo-512.png","telephone":"+27794123031","areaServed":{"@type":"State","name":"Gauteng"},"address":{"@type":"PostalAddress","addressRegion":"Gauteng","addressCountry":"ZA"},"description":"DJ for weddings, private parties, reunions and club gigs. Laser and smoke included. Gauteng based, open to travel."},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What's included in the price?","acceptedAnswer":{"@type":"Answer","text":"Every booking includes the full DJ setup, the laser show and smoke. For bigger venues that need more volume, additional sound hire is available for R1999."}},{"@type":"Question","name":"How long do you play?","acceptedAnswer":{"@type":"Answer","text":"There's no hourly limit. If I'm there, we go all night — as late as your venue allows and for as long as the dancefloor keeps going."}},{"@type":"Question","name":"Where are you based? Do you travel?","acceptedAnswer":{"@type":"Answer","text":"I'm based in Gauteng and happy to travel. Travel fees are quoted separately, depending on where your event is."}},{"@type":"Question","name":"Can we request songs?","acceptedAnswer":{"@type":"Answer","text":"Yes, please! Send your must-play songs (and anything you don't want to hear) before the event, and requests on the night are welcome too. I can also set up a personal song-request page your guests can use before the day. I can also set up a personal song-request page your guests can use before the day."}},{"@type":"Question","name":"What music do you play?","acceptedAnswer":{"@type":"Answer","text":"Local house is my specialty, plus 80's hits, pop bangers and sokkie. I read the room and mix it to suit your crowd."}},{"@type":"Question","name":"What do you need from the venue?","acceptedAnswer":{"@type":"Answer","text":"Space for the DJ setup and access to power close by. I'll arrive early to set up and sound-check, and we'll confirm the details with you or the venue beforehand."}},{"@type":"Question","name":"Is the smoke machine OK for every venue?","acceptedAnswer":{"@type":"Answer","text":"Some venues have smoke detectors, so it's worth checking with them. The smoke can be turned down or switched off if needed."}},{"@type":"Question","name":"Praat jy Afrikaans?","acceptedAnswer":{"@type":"Answer","text":"Ja, natuurlik! Afrikaans of English — en ek hoop jy kan kaalvoet sokkie."}},{"@type":"Question","name":"How do I book?","acceptedAnswer":{"@type":"Answer","text":"Send a WhatsApp with your date, venue, type of event and rough guest count. I'll confirm availability and send you a quote."}},{"@type":"Question","name":"How far in advance should I book?","acceptedAnswer":{"@type":"Answer","text":"As early as possible — weekends fill up fast, especially for weddings."}}]}]}</script>
 </head>
 <body>
@@ -72,7 +72,7 @@
   <div><b>Gauteng</b><span>based &middot; will travel</span></div>
 </div>
 
-<!-- Upcoming gigs: one <li> per date. site.js hides dates that have passed and flags the next one. -->
+<!-- Upcoming gigs: one <li> per date. site.js hides dates once the set has ended (02:00 the next morning) and flags the next one. -->
 <section class="block" id="gigs">
   <div class="sec-head">
     <div class="lbl">// Catch me live &middot; Kom jol saam</div>
@@ -83,17 +83,17 @@
     <li class="fx next" data-date="2026-10-10" data-label="Sat 10 Oct">
       <time class="fx-date" datetime="2026-10-10"><span>Sat</span><b>10</b><span>Oct</span></time>
       <div class="fx-info"><h4>Thirsty Fox</h4><p>Sports Bar &middot; Centurion</p></div>
-      <span class="fx-badge">Next up</span>
+      <div class="fx-meta"><span class="fx-badge">Next up</span><span class="fx-time">19:00 &ndash; 02:00</span></div>
     </li>
     <li class="fx" data-date="2026-10-17" data-label="Sat 17 Oct">
       <time class="fx-date" datetime="2026-10-17"><span>Sat</span><b>17</b><span>Oct</span></time>
-      <div class="fx-info"><h4>Coconut Joes</h4></div>
-      <span class="fx-badge">Next up</span>
+      <div class="fx-info"><h4>Coconut Joes</h4><p>Sports Bar &middot; Centurion</p></div>
+      <div class="fx-meta"><span class="fx-badge">Next up</span><span class="fx-time">19:00 &ndash; 02:00</span></div>
     </li>
     <li class="fx" data-date="2026-10-24" data-label="Sat 24 Oct">
       <time class="fx-date" datetime="2026-10-24"><span>Sat</span><b>24</b><span>Oct</span></time>
       <div class="fx-info"><h4>Thirsty Fox</h4><p>Sports Bar &middot; Centurion</p></div>
-      <span class="fx-badge">Next up</span>
+      <div class="fx-meta"><span class="fx-badge">Next up</span><span class="fx-time">19:00 &ndash; 02:00</span></div>
     </li>
   </ol>
 </section>
@@ -133,27 +133,27 @@
       <div class="m-tag"><small>DJ Gig &middot; Centurion &middot; Sep 2026</small>Thirsty Fox</div>
     </div>
     <div class="m-item" data-video tabindex="0" role="button" aria-label="Play Anro &amp; Lene Wedding highlight">
-      <video src="media/events/anro-lene-wedding/reel.mp4" poster="media/events/anro-lene-wedding/reel.jpg" preload="none" playsinline></video>
+      <video src="media/events/anro-lene-wedding/reel.mp4?v=2" poster="media/events/anro-lene-wedding/reel.jpg" preload="none" playsinline></video>
       <div class="m-play"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="26"/><path d="M23 18l15 10-15 10z"/></svg></div>
       <div class="m-tag"><small>Wedding &middot; Lutzville &middot; Sep 2026</small>Anro &amp; Lene</div>
     </div>
     <div class="m-item" data-video tabindex="0" role="button" aria-label="Play Hoerskool Centurion Reunion highlight">
-      <video src="media/events/hoerskool-centurion-reunion/reel.mp4" poster="media/events/hoerskool-centurion-reunion/reel.jpg" preload="none" playsinline></video>
+      <video src="media/events/hoerskool-centurion-reunion/reel.mp4?v=2" poster="media/events/hoerskool-centurion-reunion/reel.jpg" preload="none" playsinline></video>
       <div class="m-play"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="26"/><path d="M23 18l15 10-15 10z"/></svg></div>
       <div class="m-tag"><small>Reunion &middot; Jul 2026</small>Hoerskool Centurion</div>
     </div>
     <div class="m-item" data-video tabindex="0" role="button" aria-label="Play Vistenk highlight">
-      <video src="media/events/vistenk/reel.mp4" poster="media/events/vistenk/reel.jpg" preload="none" playsinline></video>
+      <video src="media/events/vistenk/reel.mp4?v=2" poster="media/events/vistenk/reel.jpg" preload="none" playsinline></video>
       <div class="m-play"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="26"/><path d="M23 18l15 10-15 10z"/></svg></div>
       <div class="m-tag"><small>Party</small>Vistenk</div>
     </div>
     <div class="m-item" data-video tabindex="0" role="button" aria-label="Play Onderstepoort highlight">
-      <video src="media/events/onderstepoort/reel.mp4" poster="media/events/onderstepoort/reel.jpg" preload="none" playsinline></video>
+      <video src="media/events/onderstepoort/reel.mp4?v=2" poster="media/events/onderstepoort/reel.jpg" preload="none" playsinline></video>
       <div class="m-play"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="26"/><path d="M23 18l15 10-15 10z"/></svg></div>
       <div class="m-tag"><small>DJ Gig &middot; May 2026</small>Onderstepoort</div>
     </div>
     <div class="m-item" data-video tabindex="0" role="button" aria-label="Play House Party highlight">
-      <video src="media/events/house-party/reel.mp4" poster="media/events/house-party/reel.jpg" preload="none" playsinline></video>
+      <video src="media/events/house-party/reel.mp4?v=2" poster="media/events/house-party/reel.jpg" preload="none" playsinline></video>
       <div class="m-play"><svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="26"/><path d="M23 18l15 10-15 10z"/></svg></div>
       <div class="m-tag"><small>Private</small>House Party</div>
     </div>
@@ -347,6 +347,6 @@
 
 <a class="wa-float" href="https://wa.me/27794123031?text=Hi%20Vissie%20G%2C%20I'd%20like%20to%20book%20you%20for%20an%20event." target="_blank" rel="noopener" aria-label="Book on WhatsApp"><svg viewBox="0 0 24 24"><use href="#wa"/></svg></a>
 
-<script src="site.js"></script>
+<script src="site.js?v=20261005b"></script>
 </body>
 </html>
